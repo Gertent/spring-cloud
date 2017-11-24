@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="RocketMQ:war exploded">
+    <output-path>$PROJECT_DIR$/RocketMQ/target/RocketMQ</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="RocketMQ" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-classic:1.0.13" />
+          <element id="library" level="project" name="Maven: ch.qos.logback:logback-core:1.0.13" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.5" />
+          <element id="library" level="project" name="Maven: com.alibaba.rocketmq:rocketmq-client:3.2.6" />
+          <element id="library" level="project" name="Maven: com.alibaba.rocketmq:rocketmq-common:3.2.6" />
+          <element id="library" level="project" name="Maven: com.alibaba.rocketmq:rocketmq-remoting:3.2.6" />
+          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.3" />
+          <element id="library" level="project" name="Maven: io.netty:netty-all:4.0.25.Final" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/RocketMQ/target/RocketMQ/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="RocketMQ/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="api-getway:war">
+    <output-path>$PROJECT_DIR$/api-getway/target</output-path>
+    <root id="archive" name="api-getway.war">
+      <element id="artifact" artifact-name="api-getway:war exploded" />
+    </root>
+  </artifact>
+</component>
