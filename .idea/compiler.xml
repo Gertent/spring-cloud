@@ -25,6 +25,7 @@
         <module name="api-getway" />
         <module name="config-server" />
         <module name="eureka-server" />
+        <module name="eureka-server-provider" />
         <module name="feign-consumer" />
         <module name="hello-service" />
         <module name="ribbon-consumer" />
@@ -35,7 +36,8 @@
     <bytecodeTargetLevel>
       <module name="api-getway" target="1.6" />
       <module name="config-server" target="1.6" />
-      <module name="eureka-server" target="1.7" />
+      <module name="eureka-server" target="1.6" />
+      <module name="eureka-server-provider" target="1.7" />
       <module name="feign-consumer" target="1.6" />
       <module name="hello-service" target="1.6" />
       <module name="ribbon-consumer" target="1.6" />

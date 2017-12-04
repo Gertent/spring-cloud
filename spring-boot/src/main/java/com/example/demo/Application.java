@@ -7,9 +7,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//@SpringBootApplication
+@SpringBootApplication
 @RestController
-@EnableAutoConfiguration
+//@EnableAutoConfiguration
 public class Application {
 
 	private static Logger logger=Logger.getLogger(Application.class);
