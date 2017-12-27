@@ -12,11 +12,15 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 public class ConsumerController {
 
+//    @Autowired
+//    RestTemplate restTemplate;
+
     @Autowired
-    RestTemplate restTemplate;
+    HelloService helloService;
 
     @RequestMapping(value="/ribbon-consumer",method = RequestMethod.GET)
     public String helloCustomer(){
-        return restTemplate.getForEntity("http://HELLO-SERVICE/hello",String.class).getBody();
+//        return restTemplate.getForEntity("http://HELLO-SERVICE/hello",String.class).getBody();
+        return helloService.helloService();
     }
 }
