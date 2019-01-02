@@ -52,7 +52,6 @@ import com.gertent.dao.BookDao;
  * 			ApplicationContextAware==》ApplicationContextAwareProcessor；
  *
  *
- * @author lfy
  *
  */
 @Configuration
