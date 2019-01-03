@@ -28,7 +28,7 @@ import com.gertent.condition.WindowsCondition;
 @Conditional({WindowsCondition.class})
 @Configuration
 //@Import({MyImportSelector.class})
-@Import({Color.class,Red.class,MyImportSelector.class,MyImportBeanDefinitionRegistrar.class})
+@Import({Color.class,Red.class,MyImportSelector.class,MyImportBeanDefinitionRegistrar.class, MyBeanDefinitionRegistryPostProcessor.class, MyBeanDefinitionRegistryPostProcessorEx.class})
 //@Import导入组件，id默认是组件的全类名
 public class MainConfig2 {
 
@@ -90,6 +90,8 @@ public class MainConfig2 {
      * 		1）、默认获取到的是工厂bean调用getObject创建的对象
      * 		2）、要获取工厂Bean本身，我们需要给id前面加一个&
      * 			&colorFactoryBean
+     * 5) 实现BeanDefinitionRegistryPostProcessor接口，手动注册
+     *
      */
     @Bean
     public ColorFactoryBean colorFactoryBean(){

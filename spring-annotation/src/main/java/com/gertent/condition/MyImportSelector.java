@@ -11,6 +11,6 @@ import org.springframework.core.type.AnnotationMetadata;
  */
 public class MyImportSelector implements ImportSelector {
     public String[] selectImports(AnnotationMetadata annotationMetadata) {
-        return new String[]{"com.atguigu.bean.Blue","com.atguigu.bean.Yellow"};
+        return new String[]{"com.gertent.bean.Blue","com.gertent.bean.Yellow"};
     }
 }
