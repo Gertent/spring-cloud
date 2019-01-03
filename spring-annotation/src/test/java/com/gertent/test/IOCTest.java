@@ -2,6 +2,8 @@ package com.gertent.test;
 
 import java.util.Map;
 
+import com.gertent.bean.Gril;
+import com.gertent.bean.Man;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
@@ -13,6 +15,20 @@ import com.gertent.config.MainConfig2;
 
 public class IOCTest {
     AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(MainConfig2.class);
+
+    @Test
+    public void testBeanDefinitionRegistryPostProcessorDefineBeansEx(){
+        //扫描自定义注解对应的bean
+        Gril gril = (Gril) applicationContext.getBean("com.gertent.bean.Gril");
+//        Gril gril = (Gril) applicationContext.getBean(Gril.class);
+        System.out.println(gril);
+    }
+
+    @Test
+    public void testBeanDefinitionRegistryPostProcessorDefineBeans(){
+        Man man = (Man) applicationContext.getBean("man");
+        System.out.println(man);
+    }
 
 
     @Test
